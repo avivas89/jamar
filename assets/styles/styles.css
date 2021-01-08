@@ -11,7 +11,7 @@
   font-size: 16px;
 }
 
-p.h1, h1, p.h1, h2, p.h1, h3, p.h1, h4, p.h1, h5, p.h1, h6 {
+p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Roboto;
   color: var(--text);
 }
@@ -44,7 +44,19 @@ section {
   box-shadow: none!important;
 }
 /*----------------------------Web-------------------------------*/
-
+/*-------------------HEAD----------------*/
+#head{
+  font-size: 12px;
+}
+#head .navbar1{
+  background-color: #F1F1F1;
+}
+#head .navbar2{
+  width: 800px;
+}
+#head .logo{
+  font-size: 30px;
+}
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}

@@ -3,26 +3,90 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/styles/fontawesome/css/all.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico"/>
   <link rel="preload" href="assets/styles/bootstrap/bootstrap.min.css" as="style">
   <link rel="preload" href="assets/styles/styles.css" as="style"/>
 	<link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/styles/styles.css" />
-	<title>Landing title</title>
+	<title>Jamar</title>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<p class="h1">
-						Header
-					</p>
-				</div>
-			</div>
-		</div>
+	<header id="head">
+<!---------------------- Navbar1 -------------------------------->
+    <div class="topbar navbar1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <div class="navbar ms-auto flex-row justify-content-start">
+                <a class="nav-link dropdown-toggle me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-globe"></i> Selecciona tu Región
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              <a href="#"><i class="fas fa-location-arrow"></i> Comunicate con nosotros al tel. <span style="color: #EC002E">205-6500</span></a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="navbar ms-auto">
+              <a class="active" href="#"><i class="fas fa-truck fa-home"></i> rastrea tu pedido aquí</a>
+              <a href="#"><i class="fas fa-location-arrow"></i> Nuestras tiendas</a>
+              <a href="#"><i class="fas fa-envelope-open"></i> Contáctenos</a>
+              <a href="#"><i class="fas fa-at"></i> Suscribete a Jamar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!---------------------- Navbar2 -------------------------------->
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="navbar ms-auto flex-row justify-content-start">
+            <a class="navbar-brand logo" href="#">JAMAR</a>
+            <form class="d-flex">
+              <input class="form-control me-2 navbar2" type="search" placeholder="Encuentra aquítodo para tu hogar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <a href="#" class="ms-3 me-3"><i class="fas fa-location-arrow"></i></a>
+            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="d-flex flex-column justify-content-center align-items-center"><i class="fas fa-user"></i> <span>Iniciar sesión</span></a>
+            <!-- Modal -->
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+<!---------------------- Navbar3 -------------------------------->
+<div class="container">
+  <div class="row">
+    <div class="class">
+
+    </div>
+  </div>
+</div>
 	</header>
+
 	<section>
 		<div class="container">
 			<div class="row">
@@ -46,6 +110,7 @@
 	</footer>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/headroom.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
