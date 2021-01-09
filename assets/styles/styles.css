@@ -47,6 +47,7 @@ section {
 /*-------------------HEAD----------------*/
 #head{
   font-size: 12px;
+  margin-bottom: 0;
 }
 #head .navbar1{
   background-color: #F1F1F1;
@@ -54,8 +55,154 @@ section {
 #head .navbar2{
   width: 800px;
 }
+#head #navbar3{
+  color: black;
+  margin: 0 15px;
+}
+#head #navbar3 .list{
+
+}
 #head .logo{
   font-size: 30px;
+}
+/*-------------------BANNER----------------*/
+#banner{
+  background-image: url(../images/banner.png);
+  padding: 4vh 0;
+}
+/*-------------------SLIDERS----------------*/
+.sliders{
+  max-width: 100%;
+}
+#sliders {
+  padding: 1vh 0;
+  margin: 0;
+}
+#sliders img{
+  width: 100%;
+  height: 100vh;
+}
+.owl-dots{
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+.casa .prueba{
+  background-color: #f9021a91;
+  color: white;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  bottom: 50%;
+  left: 60%;
+}
+.casa .prueba p{
+  color: white;
+}
+.casa .prueba .p1{
+  font-family: "Roboto";
+  font-style:italic;
+  font-size: 34px;
+  left: 10%;
+  padding: 0;
+  margin: 0;
+}
+.casa .prueba .p2{
+  font-family: "Roboto";
+  font-style:italic;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+.casa .prueba .p3{
+  font-family: "Roboto";
+  font-style:normal;
+  font-size: 34px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+.casa .prueba .p4{
+  font-family: "Roboto";
+  font-style:normal;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+.casa .prueba .p5{
+  font-family: "Roboto";
+  font-style:normal;
+  color: #FFE300;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+/*-------------------SLIDERS----------------*/
+#boton{
+  padding: 4vh 0;
+}
+#boton .btn {
+  background-color: #1B969A;
+  border: none;
+  color: white;
+  padding: 12px 50px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#boton .btn1 {
+  background-color: #1B969A;
+  border: none;
+  color: white;
+  padding: 12px 50px;
+  font-size: 12px;
+  cursor: pointer;
+}
+button.btn{
+  position: relative;
+  height: 70px;
+}
+
+button.btn:after {
+    content: "";
+    background-color: #287375;
+    width: 2px;
+    height: 75px;
+    transform: rotate(30deg);
+    top: 0;
+    position: absolute;
+    right: 20px;
+}
+/*-------------------IMAGE GRID----------------*/
+#credito{
+  margin-top: 0;
+  padding: 0;
+
+}
+.credit{
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 250px;
+}
+#credito .a{
+  list-style-type: circle;
+}
+.credit .item1 img{
+  width: 468px;
+  height: 250px;
+}
+.credit .item2 img{
+  width: 234px;
+  height: 250px;
+}
+/*-------------------COMPRAR----------------*/
+.shop{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.shop .item2{
+  display: grid;
+  grid-template-rows: 50% 50%;
 }
 /*----------------------------Queries-------------------------------*/
 

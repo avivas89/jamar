@@ -8,6 +8,8 @@
   <link rel="preload" href="assets/styles/bootstrap/bootstrap.min.css" as="style">
   <link rel="preload" href="assets/styles/styles.css" as="style"/>
 	<link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/js/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/js/owl-carousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/styles/styles.css" />
 	<title>Jamar</title>
 </head>
@@ -43,60 +45,187 @@
       </div>
     </div>
 <!---------------------- Navbar2 -------------------------------->
-  <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="navbar ms-auto flex-row justify-content-start">
-            <a class="navbar-brand logo" href="#">JAMAR</a>
-            <form class="d-flex">
-              <input class="form-control me-2 navbar2" type="search" placeholder="Encuentra aquítodo para tu hogar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-            <a href="#" class="ms-3 me-3"><i class="fas fa-location-arrow"></i></a>
-            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="d-flex flex-column justify-content-center align-items-center"><i class="fas fa-user"></i> <span>Iniciar sesión</span></a>
-            <!-- Modal -->
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="navbar ms-auto flex-row justify-content-start">
+              <a class="navbar-brand logo" href="#">JAMAR</a>
+              <form class="d-flex">
+                <input class="form-control me-2 navbar2" type="search" placeholder="Encuentra aquítodo para tu hogar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              <a href="#" class="ms-3 me-3"><i class="fas fa-location-arrow"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="d-flex flex-column justify-content-center align-items-center"><i class="fas fa-user"></i> <span>Iniciar sesión</span></a>
+              <!-- Modal -->
 
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-  </div>
-<!---------------------- Navbar3 -------------------------------->
-<div class="container">
-  <div class="row">
-    <div class="class">
-
     </div>
-  </div>
-</div>
-	</header>
+<!---------------------- Navbar3 -------------------------------->
+    <div class="container" id="navbar3">
+      <div class="row">
+        <div class="class">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Recamaras</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="#">Colchones</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="#">Salas</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="#">Comedores</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="#">Estudio</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="#">Decoración</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="#"><span style="color: #EC002E"> Sale </span></a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="#">Catálogo virtual</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!---------------------- Banner -------------------------------->
+	<section id="banner">
 
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h1>Landing title</h1>
-          <p>NOTA: git init no iniciado</p>
-				</div>
-			</div>
-		</div>
 	</section>
+<!---------------------- Sliders -------------------------------->
+  <section id="sliders">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="owl-carousel owl-theme casa">
+            <div class="item"><img src="assets/images/headboard.jpg" alt="Jamar">
+              <div class="prueba">
+                <p class="p1"> Todo</p>
+                <p class="p2"> en</p>
+                <p class="p3"> camas</p>
+                <p class="p4"> desde</p>
+                <p class="p5"> $299</p>
+              </div>
+            </div>
+            <div class="item"><img src="assets/images/img_13.jpg" alt="Jamar"></div>
+            <div class="item"><img src="assets/images/img_14.jpg" alt="Jamar"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!---------------------- Button -------------------------------->
+  <section id="boton">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="btn-group ms-auto">
+            <button class="btn"><i class="fas fa-truck"></i> Conoce nuestro transporte y armado gratis</button>
+            <button class="btn"><i class="fas fa-calendar-alt"></i> Conoce nuestra garantia de 5 o más años</button>
+            <button class="btn"><i class="fas fa-dolly"></i> Aseguramos la entrega perfecta</button>
+            <button class="btn1"><i class="fas fa-medal"></i> Como logramos nuestra alta calidad</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!---------------------- Image Grid -------------------------------->
+    <section id="credito">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="credit">
+            <div class="item1">
+              <img src="assets/images/img_13.jpg" alt="Jamar">
+            </div>
+            <div class="item2">
+              <img src="assets/images/img_13.jpg" alt="Jamar">
+            </div>
+            <div class="item">
+              <ul class="a">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!---------------------- Compras -------------------------------->
+    <section id="comprar">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Comprar por departamentos</p>
+          <div class="shop">
+            <div class="item1"></div>
+            <div class="item2">
+              <div class="subitem"></div>
+              <div class="subitem"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Landing title</h1>
+          <p>NOTA: git init no iniciado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Landing title</h1>
+          <p>NOTA: git init no iniciado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -111,6 +240,7 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/js/headroom.min.js"></script>
+<script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
