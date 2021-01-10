@@ -175,9 +175,7 @@ button.btn:after {
 }
 /*-------------------IMAGE GRID----------------*/
 #credito{
-  margin-top: 0;
-  padding: 0;
-
+  padding: 4vh 0;
 }
 .credit{
   display: grid;
@@ -188,14 +186,17 @@ button.btn:after {
   list-style-type: circle;
 }
 .credit .item1 img{
-  width: 468px;
+  width:100%;
   height: 250px;
 }
 .credit .item2 img{
-  width: 234px;
+  width: 100%;
   height: 250px;
 }
 /*-------------------COMPRAR----------------*/
+#comprar{
+  padding: 4vh 0;
+}
 .shop{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -203,6 +204,93 @@ button.btn:after {
 .shop .item2{
   display: grid;
   grid-template-rows: 50% 50%;
+}
+.container .shop{
+  position: relative;
+}
+.shop .item1 .text-block {
+  position: absolute;
+  top: 90%;
+  left: 13%;
+  background-color: #ffffffb5;
+  color: black;
+  padding: 0 20px;
+  font-size: 0.7rem;
+}
+.shop .item2 .subitem1 .text-block {
+  position: absolute;
+  top: 90%;
+  right: 13%;
+  background-color: #ffffffb5;
+  color: black;
+  padding: 0 20px;
+  font-size: 0.7rem;
+}
+.shop .item2 .subitem2 .text-block {
+  position: absolute;
+  bottom: 50%;
+  right: 13%;
+  background-color: #ffffffb5;
+  color: black;
+  padding: 0 20px;
+  font-size: 0.7rem;
+}
+.shop .item1 img{
+  width: 100%;
+  height: 500px;
+}
+.shop .item2 .subitem1 img{
+  width: 100%;
+  height: 230px;
+}
+.shop .item2 .subitem2 img{
+  width: 100%;
+  height: 234px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+.h4, h4 {
+    font-size: 1rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+/*-------------------OFERTA----------------*/
+#offer{
+  position: relative;
+  padding: 4vh 0;
+}
+#offer .text-block1{
+  position: absolute;
+  top: 73%;
+  left: 13%;
+  background-color: #ffffffb5;
+  color: black;
+  padding: 0 20px;
+  font-size: 0.7rem;
+}
+#offer .text-block2{
+  position: absolute;
+  top: 73%;
+  left: 43%;
+  background-color: #ffffffb5;
+  color: black;
+  padding: 0 20px;
+  font-size: 0.7rem;
+}
+#offer .text-block3{
+  position: absolute;
+  top: 73%;
+  left: 73%;
+  background-color: #ffffffb5;
+  color: black;
+  padding: 0 20px;
+  font-size: 0.7rem;
 }
 /*----------------------------Queries-------------------------------*/
 
