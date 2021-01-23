@@ -3,8 +3,8 @@
 :root{
   --primary: #191920;
   --secondary: #033545;
-  --text: #12446e;
-  --text-secondary: #425762;
+  --text: black;
+  --text-secondary: black;
   --text-hover: #191920;
   --btn: #a3a3a3;
   --btn-hover: #a3a3a3;
@@ -14,6 +14,16 @@
 p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Roboto;
   color: var(--text);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+.h4, h4 {
+    font-size: 1rem;
 }
 
 a,p,div,input,button,textarea{
@@ -43,7 +53,6 @@ section {
   border-color: var(--btn-hover)!important;
   box-shadow: none!important;
 }
-/*----------------------------Web-------------------------------*/
 /*-------------------HEAD----------------*/
 #head{
   font-size: 12px;
@@ -53,17 +62,17 @@ section {
   background-color: #F1F1F1;
 }
 #head .navbar2{
-  width: 800px;
+  width: 750px;
 }
 #head #navbar3{
   color: black;
-  margin: 0 15px;
+  margin: 0 3%;
 }
 #head #navbar3 .list{
 
 }
 #head .logo{
-  font-size: 30px;
+  font-size: 2rem;
 }
 /*-------------------BANNER----------------*/
 #banner{
@@ -82,10 +91,10 @@ section {
   width: 100%;
   height: 100vh;
 }
-.owl-dots{
+#sliders .owl-dots{
   position: absolute;
   width: 100%;
-  bottom: 10px;
+  bottom: 2%;
 }
 .casa .prueba{
   background-color: #f9021a91;
@@ -138,9 +147,9 @@ section {
   padding: 0;
   margin: 0;
 }
-/*-------------------SLIDERS----------------*/
+/*-------------------BUTTONS----------------*/
 #boton{
-  padding: 4vh 0;
+  padding: 2vh 0;
 }
 #boton .btn {
   background-color: #1B969A;
@@ -150,20 +159,13 @@ section {
   font-size: 12px;
   cursor: pointer;
 }
-#boton .btn1 {
-  background-color: #1B969A;
-  border: none;
-  color: white;
-  padding: 12px 50px;
-  font-size: 12px;
-  cursor: pointer;
-}
-button.btn{
+
+#boton button.btn{
   position: relative;
   height: 70px;
 }
 
-button.btn:after {
+#boton button.btn:not(:last-child):after {
     content: "";
     background-color: #287375;
     width: 2px;
@@ -175,12 +177,13 @@ button.btn:after {
 }
 /*-------------------IMAGE GRID----------------*/
 #credito{
-  padding: 4vh 0;
+  padding: 2vh 0;
 }
 .credit{
   display: grid;
-  grid-template-columns: 50% 25% 25%;
-  grid-template-rows: 250px;
+  grid-template-columns: 50% 23% 25%;
+  grid-template-rows: 100%;
+  column-gap: 1%;
 }
 #credito .a{
   list-style-type: circle;
@@ -193,6 +196,71 @@ button.btn:after {
   width: 100%;
   height: 250px;
 }
+#credito .credit .item3 .subitem2 .listprim{
+    background-color: #F1F1F1;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+#credito .listprim li:not(:last-child) {
+    border-bottom: solid 2px #c7bfbf8c;
+    opacity: 1;
+}
+#credito .listprim li{
+  list-style: none;
+  padding: 2% 0;
+}
+.credit .listprim i{
+  border:1px solid #EC002E;
+  border-radius: 100%;
+  color: #EC002E;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.credit .item3 .cabecera{
+    background-color: #EC002E;
+}
+.credit .item3 {
+  display: grid;
+  grid-template-rows: 25% 75%;
+}
+.credit .item3 .subitem1 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #EC002E;
+}
+.credit .item3 .cabecera{
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    line-height: 1rem;
+    color: white;
+    background-color: #EC002E;
+    text-align: end;
+    padding-top: 8%;
+    padding-right: 8%;
+}
+.credit .item3 img{
+    width: 100%;
+}
+#credito .credit .item3 .subitem2 .listprim span{
+  opacity: 0.8;
+  font-size: 1rem;
+}
+#credito .credit .item3 .subitem2 .listprim a {
+    color: black;
+    margin: 3px;
+    padding: 0 -2%;
+    text-decoration: none;
+}
+#credito .listprim a:hover span{
+  opacity: 1;
+}
+
 /*-------------------COMPRAR----------------*/
 #comprar{
   padding: 4vh 0;
@@ -247,37 +315,42 @@ button.btn:after {
   width: 100%;
   height: 234px;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1;
-}
-.h4, h4 {
-    font-size: 1rem;
-}
+
 p {
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
-/*-------------------OFERTA----------------*/
+/*-------------------OFFER----------------*/
 #offer{
-  position: relative;
   padding: 4vh 0;
 }
+
+#offer .offer{
+  position: relative;
+}
+
 #offer .text-block1{
   position: absolute;
-  top: 73%;
-  left: 13%;
+  top: 78%;
+  left: 0;
+  right: 68%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
   background-color: #ffffffb5;
   color: black;
   padding: 0 20px;
   font-size: 0.7rem;
 }
+
 #offer .text-block2{
   position: absolute;
-  top: 73%;
-  left: 43%;
+  top: 78%;
+  left: 42%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
   background-color: #ffffffb5;
   color: black;
   padding: 0 20px;
@@ -285,12 +358,293 @@ p {
 }
 #offer .text-block3{
   position: absolute;
-  top: 73%;
-  left: 73%;
+  top: 78%;
+  left: 78%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
   background-color: #ffffffb5;
   color: black;
   padding: 0 20px;
   font-size: 0.7rem;
+}
+/*-------------------OFERTA----------------*/
+#owl2 {
+    padding: 2vh 0;
+}
+#owl2 .owl-dots {
+    top: 100%;
+}
+#owl2 .catalogo{
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+#owl2 p{
+  color: black;
+}
+/*-------------------SUSCRIBETE----------------*/
+#end1 {
+    padding: 2vh 0;
+}
+#end1 .improv{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-image: url(../images/banner2.png);
+  height: 200px;
+}
+
+#end1 .text-blockend{
+  background-color: #ffffff00;
+  color: black;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+#end1 .item1 {
+    text-align: right;
+    padding-top: 7%;
+    padding-left: 70%;
+}
+#end1 .item2 {
+    margin-right: 20%;
+    padding-top: 7%;
+}
+#end1 .item2 {
+    margin-right: 20%;
+}
+#end1 .text-blockend p{
+  color: black;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+
+}
+#end1 .input-container {
+  display: -ms-flexbox; /* IE10 */
+  width: 85%;
+  margin-bottom: 6px;
+  color: #F1F1F1;
+  font-size: 0.7rem
+}
+#end1 .input-field {
+  width: 60%;
+  padding: 1px;
+  outline: none;
+  color: #F1F1F1;
+  font-size: 0.7rem
+}
+#end1 .btn {
+  background-color: #EC002E;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  font-size: 0.7rem;
+}
+#end1 .improv .text-blockend .text2{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.01rem;
+}
+#end1 .improv .text-blockend .text1{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing:0.01px;
+}
+#end1 .improv .text-blockend .text4{
+  font-family: "Roboto";
+  font-style: normal;
+  letter-spacing: 0.01px;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+}
+/*-------------------FINAL----------------*/
+#fin {
+    padding-top: 6vh;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+#fin .gridfooter{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+}
+#fin .item1{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.gridfooter .item1 .subitem12 {
+    display: grid;
+    grid-template-columns: 60% 5% 5% 5% 5%;
+}
+#fin .item2 {
+    display: grid;
+    grid-template-columns: 25% 20% 25% 20%;
+}
+#fin .item2 .subitem23 {
+  display: grid;
+  grid-template-rows: 10% 80%;
+}
+#fin .item2 .subitem23 .subbitem2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/*------ITEM1------*/
+
+#fin .gridfooter .item1 .subitem11 img {
+    width: 30%;
+}
+
+
+#fin .linea p{
+   color: black;
+  font-size: 0.8rem;
+}
+#fin .list li{
+  list-style: none;
+  line-height: 1.3rem;
+}
+#fin .list a{
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  line-height: 1rem;
+}
+#fin .list {
+  margin-left: 0;
+  padding-left: 0;
+}
+#fin .list a:hover span{
+  opacity: 1;
+}
+/*------ITEM2------*/
+#fin .gridfooter .item2 .subitem21 .btn{
+  background-color: #1B969A;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  opacity: 0.9;
+  font-size: 0.7rem;
+}
+#fin .gridfooter .item2 .subitem21 .text1{
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+#fin .gridfooter .item2 .subitem21 .linea {
+    margin-top: 10px;
+    border: 1px solid #dcdbdb;
+    width: 70%;
+}
+#fin .gridfooter .item2 .subitem21 .subbitem4 p {
+    font-size: 0.7rem;
+    text-align: end;
+    padding-right: 5%;
+}
+#fin .gridfooter .item2 .subitem21 .list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#fin .gridfooter .item2 .subitem22 .list2 li{
+  list-style: none;
+  line-height: 1.3rem;
+}
+#fin .gridfooter .item2 .subitem22 .list2 a{
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  line-height: 1rem;
+  color: black;
+}
+#fin .gridfooter .item2 .subitem22 .list2 {
+  margin-left: 0;
+  padding-left: 0;
+}
+#fin .gridfooter .item2 .subitem22 .list2 a:hover span{
+  opacity: 1;
+}
+.subitem23 .subbitem2 .subbbitem p {
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+    line-height: 1rem;
+}
+#fin .gridfooter .item2 .subitem24 .list3 li{
+  list-style: none;
+  line-height: 1.3rem;
+}
+#fin .gridfooter .item2 .subitem24 .list3 a{
+  text-decoration: none;
+  list-style: none;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  line-height: 1rem;
+  color: black;
+}
+#fin .gridfooter .item2 .subitem24 a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.gridfooter .item2 .subitem24 i {
+    color: #EC002E;
+    margin: 8px;
+    font-size: 1.3rem;
+}
+#fin .gridfooter .item1 .subitem12 .subbitem4 p {
+    padding-left: 215px;
+}
+#fin .gridfooter .item1 .subitem12 .subbitem4 a {
+    color:#EC002E;
+}
+#fin .gridfooter .item2 .subitem24 .fitnes {
+    font-weight: 100;
+
+}
+#fin .gridfooter .item2 .subitem24 span {
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+#fin .gridfooter .item2 .subitem24 .block {
+    display: block;
+    margin-left: 32px;
+}
+/*------ITEM3------*/
+
+
+/*-------------------FINAL----------------*/
+/*------FOOTERBANNER------*/
+#finn .containerf .footerbanner{
+  background-color: #F1F1F1;
+  padding-left: 40%;
+  height: 70%;
+}
+#finn .footerbanner img{
+  width: 8%;
+  padding-top: 1%;
+}
+/*------FOOTERRED------*/
+#finn .containerf .footerred{
+  background-color: red;
+  height: 50%;
+}
+#finn .containerf .footerred p{
+  font-size: 0.6rem;
+  color: white;
+  padding-top: 1%;
+  padding-left: 4%;
 }
 /*----------------------------Queries-------------------------------*/
 
@@ -302,4 +656,412 @@ p {
 
 @media (max-width: 767.98px) {}
 
-@media (max-width: 575.98px) {}
+@media (min-width: 768px) {
+  #offer .offer{
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-column-gap: 4%;
+}
+}
+
+@media (max-width: 575.98px) {
+  #head .navbar1 {
+    display: none;
+  }
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  .navbar form + a, .navbar form + a + a {
+    display: none!important;
+  }
+  #head .navbar2 {
+    width: 100%;
+  }
+  #head .logo {
+    font-size: 2rem;
+    margin-left: 5%;
+  }
+/*-------------------SLIDERS----------------*/
+  #sliders img {
+    width: 100%;
+    height: auto;
+  }
+  #sliders .owl-dots {
+    position: relative;
+  }
+  #sliders {
+      padding-top: 1vh;
+      margin: 0;
+  }
+  #sliders .item {
+    position: relative;
+  }
+  .casa .prueba {
+    background-color: #f9021a91;
+    color: white;
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 1.6rem;
+    padding: 2vh 0;
+  }
+  .casa .prueba {
+    background-color: #f9021a91;
+    color: white;
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 1.3rem;
+    padding: 2vh 0;
+  }
+  .casa .prueba .p1 {
+    font-style: italic;
+    font-size: 40px;
+    padding-left: 6%;
+    margin: 0;
+  }
+  .casa .prueba .p2 {
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 25px;
+    padding-left: 14%;
+    margin: 0;
+  }
+  .casa .prueba .p3 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 6%;
+    margin: 0;
+  }
+  .casa .prueba .p4 {
+    font-style: italic;
+    font-size: 22px;
+    padding-left: 16%;
+    margin-top: 2%;
+  }
+  .casa .prueba .p5 {
+    font-style: normal;
+    color: #FFE300;
+    font-size: 33px;
+    font-weight: 600;
+    padding-left: 13%;
+    margin: 2%;
+  }
+/*-------------------BUTTONS----------------*/
+  .btn-group, .btn-group-vertical {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+  }
+  #boton button.btn {
+    position: relative;
+    height: 100%;
+  }
+  #boton .btn {
+      border: none;
+      color: black;
+      padding: 2% 10%;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #F1F1F1 !important;
+      margin-bottom: 10%;
+  }
+  #boton .container {
+      background-color: #F1F1F1 !important;
+  }
+  #boton button.btn:after {
+      display: none;
+  }
+  #boton {
+    padding: 0;
+    margin: 0;
+  }
+ #boton .btn-group .icono{
+    width: 90%;
+    color: #1B969A;
+  }
+  #boton .btn-group .icono2{
+    width: 100%;
+    color: #1B969A;
+  }
+  #boton .btn-group span{
+    color: #1B969A;
+    font-size: 10px;
+  }
+/*-------------------CREDIT----------------*/
+  .credit {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 32% 32% 32%;
+    grid-row-gap: 2%;
+  }
+  .credit .item1 img {
+      width: 100%;
+      height: 100%;
+  }
+  .credit .item2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .credit .item3 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+  }
+  .credit .item3 .subitem1 {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #EC002E;
+  }
+  #credito .listprim span {
+      opacity: 0.8;
+      font-size: 0.9rem;
+      font-weight: 600;
+  }
+  .credit .item3 .cabecera {
+      display: none;
+  }
+    .item3 .subitem1 .subbitem2 {
+    display: none;
+ }
+ .credit .listprim i {
+    border: 2px solid #EC002E;
+    border-radius: 100%;
+    color: #EC002E;
+    width: 25px;
+    height: 27px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+ }
+#credito .credit .item3 .subitem2 .listprim {
+    background-color: #F1F1F1;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    padding-top: 5%;
+}
+#credito .listprim li {
+    list-style: none;
+    padding: 16px 0;
+  }
+/*-------------------COMPRAS----------------*/
+  #comprar .title h3{
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.5rem;
+  }
+  #comprar .shop {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40%;
+    grid-row-gap: 10%;
+  }
+  #comprar .shop .item1 img {
+      width: 100%;
+      height: 100%;
+  }
+  #comprar  .shop .item2 {
+      display: grid;
+      grid-template-columns: 47% 47%;
+      grid-template-rows: 100%;
+      grid-column-gap: 6%;
+  }
+  #comprar  .shop .item2 .subitem1 img {
+      width: 100%;
+      height: 100%;
+  }
+  #comprar  .shop .item2 .subitem2 img {
+      width: 100%;
+      height: 100%;
+  }
+  #comprar  .shop .item1 .text-block {
+      position: absolute;
+      top: 27%;
+      left: 28%;
+      background-color: #ffffffb5;
+      color: black;
+      padding: 0 20px;
+      font-size: 0.7rem;
+  }
+  #comprar .shop .item2 .subitem1 .text-block {
+    position: absolute;
+    top: 77%;
+    right: 55%;
+    background-color: #ffffffb5;
+    color: black;
+    padding: 0 14px;
+    font-size: 0.7rem;
+  }
+  #comprar .shop .item2 .subitem2 .text-block {
+      position: absolute;
+      bottom: 3%;
+      right: 1%;
+      background-color: #ffffffb5;
+      color: black;
+      padding: 0 14px;
+      font-size: 0.7rem;
+  }
+/*-------------------OFFER----------------*/
+  #offer {
+      padding: 1vh 0;
+  }
+  #offer .owl-theme .owl-nav.disabled+.owl-dots {
+      margin-top: 30px;
+  }
+  #offer .text-block1 {
+      top: 85%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      text-align: center;
+      position: absolute;
+      background-color: #ffffffb5;
+      color: black;
+      padding: 0 20px;
+      font-size: 0.7rem;
+  }
+  #offer .text-block2 {
+      top: 85%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      text-align: center;
+      position: absolute;
+      background-color: #ffffffb5;
+      color: black;
+      padding: 0 20px;
+      font-size: 0.7rem;
+  }
+  #offer .text-block3 {
+      top: 85%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      text-align: center;
+      position: absolute;
+      background-color: #ffffffb5;
+      color: black;
+      padding: 0 20px;
+      font-size: 0.7rem;
+  }
+  #offer .owl-carousel .owl-stage-outer {
+      padding-bottom: 50px;
+  }
+  /*-------------------OWL2----------------*/
+  #owl2 .catalogo {
+      font-family: "Roboto";
+      font-style: normal;
+      font-size: 20px;
+      color: black;
+      font-weight: 600;
+      text-align: center;
+  }
+  #owl2 {
+      padding: 1vh 0;
+  }
+  .products .owl-nav button {
+      position: absolute;
+      top: 20%;
+      font-size: 3rem !important;
+  }
+  .products .owl-nav button.owl-prev {
+      left: 0;
+  }
+  .products .owl-nav button.owl-next {
+      right: 0;
+  }
+  /*-------------------END1----------------*/
+  #end1 .item1 {
+      padding-top: 8%;
+      padding-left: 10%;
+      padding-right: 40%;
+  }
+  #end1 .item2 {
+    display: none;
+  }
+  #end1 .improv {
+      display: grid;
+      grid-template-columns: 100%;
+      background-image: url(../images/banner2.png);
+      height: 200px;
+  }
+
+  /*-------------------FIN----------------*/
+  #fin .item1 {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+#fin .gridfooter {
+    display: block;
+}
+  #fin .gridfooter .item1 .subitem12 .subbitem4 p {
+    display: none;
+  }
+  .gridfooter .item1 .subitem12 {
+    display: grid;
+    grid-template-columns: 34% 8% 8% 8% 8% 34%;
+    text-align: center;
+}
+
+#fin {
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    padding-right: 0;
+    padding-left: 0;
+}
+#fin .gridfooter .item2 .subitem21 .linea {
+    margin-top: 10px;
+    border: 1px solid #dcdbdb;
+    width: 70%;
+    margin-left: 56px;
+}
+#fin .gridfooter .item1 .subitem11 img {
+    width: 30%;
+    padding-bottom: 14px;
+}
+#fin .item2 {
+    display: block;
+}
+#fin .item2 {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+#fin .item2 .subitem23 .subbitem2 {
+    display: none;
+}
+
+
+#finn .containerf .footerbanner {
+    background-color: #F1F1F1;
+    text-align: center;
+}
+#finn .containerf .footerred {
+    background-color: red;
+    height: 50%;
+    text-align: center;
+}
+
+#finn .containerf .footerred p {
+    font-size: 0.6rem;
+    color: white;
+    padding-top: 4%;
+    padding-left: 4%;
+}
+}
+
